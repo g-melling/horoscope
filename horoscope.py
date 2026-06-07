@@ -24,11 +24,11 @@ def get_horoscope():
     
         horoscope_text.config(state="normal")
         horoscope_text.delete("1.0", tk.END)
-        horoscope_text.insert(tk.END, horoscope_json["horoscope"])
+        horoscope_text.insert("1.0", horoscope_json["horoscope"], "center")
         horoscope_text.config(state="disabled")
         
     except:
-        messagebox.showerror("Cosmic Error", "Could not fetch your horroscope.")
+        messagebox.showerror("Cosmic Error", "Could not fetch your horoscope.")
     
 
 root = tk.Tk()
@@ -48,7 +48,7 @@ title.pack(pady=25)
 subtitle = tk.Label(
     root,
     text="Choose your star sign and reveal today's cosmic message",
-    font=("Georgia", 13),
+    font=("Georgia", 15),
     fg="#e0b3ff",
     bg="#1b0033"
 )
@@ -56,12 +56,13 @@ subtitle.pack(pady=5)
 
 signs = get_signs()
 selected_sign = tk.StringVar()
+selected_sign.set("Select your star sign")
 
 dropdown = tk.OptionMenu(root, selected_sign, *[sign.title() for sign in signs])
 dropdown.config(
     font=("Georgia", 14),
     bg="#6a0dad",
-    fg="white",
+    fg="grey",
     activebackground="#9b30ff",
     activeforeground="white",
     width=20
@@ -80,9 +81,9 @@ button = tk.Button(
     command=get_horoscope,
     font=("Georgia", 14, "bold"),
     bg="#ff69b4",
-    fg="white",
+    fg="#a572c4",
     activebackground="#ffd700",
-    activeforeground="#1b0033",
+    activeforeground="#e0b3ff",
     padx=20,
     pady=10,
     relief="raised",
@@ -98,15 +99,16 @@ horoscope_text = tk.Text(
     width=55,
     height=10,
     wrap="word",
-    font=("Georgia", 12),
+    font=("Georgia", 16),
     bg="#2d004d",
     fg="#fff5cc",
     padx=15,
     pady=15,
     relief="flat"
 )
+horoscope_text.tag_configure("center", justify="center")
 horoscope_text.pack()
-horoscope_text.insert(tk.END, "Your horoscope will appear here...")
+horoscope_text.insert("1.0", "Your horoscope will appear here...", "center")
 horoscope_text.config(state="disabled")
 
 footer = tk.Label(
