@@ -1,4 +1,4 @@
-# 🔮 Daily Horoscope App
+# Daily Horoscope App
 
 A Python desktop application that delivers your daily horoscope based on your zodiac sign. Built with **Tkinter** for the graphical user interface and powered by **The Astrologer API** (http://sandipbgt.com/theastrologer/api/).
 
@@ -8,17 +8,17 @@ A Python desktop application that delivers your daily horoscope based on your zo
 
 ---
 
-## ✨ Features
+## Features
 
-* 🌟 Select your zodiac sign from a dropdown menu
-* 🔮 Fetch today's horoscope instantly
-* 🎨 Elegant astrology-themed user interface
-* ⚠️ User-friendly error handling and notifications
-* 🖥️ Desktop application built entirely with Python
+* Select your zodiac sign from a dropdown menu
+* Fetch today's horoscope instantly
+* Elegant astrology-themed user interface
+* User-friendly error handling and notifications
+* Desktop application built entirely with Python
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -50,7 +50,7 @@ python horoscope_app.py
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 
 This project uses:
 
@@ -65,7 +65,7 @@ pip install requests
 
 ---
 
-## 🛠️ How It Works
+## How It Works
 
 1. The application retrieves available zodiac signs from the API.
 2. The user selects their star sign.
@@ -88,7 +88,7 @@ GET http://sandipbgt.com/theastrologer/api/horoscope/{sign}/today
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```text
 daily-horoscope-app/
@@ -100,7 +100,7 @@ daily-horoscope-app/
 
 ---
 
-## 🎨 Technologies Used
+## Technologies Used
 
 * Python
 * Tkinter
@@ -109,7 +109,7 @@ daily-horoscope-app/
 
 ---
 
-## ⚠️ Error Handling
+## Error Handling
 
 The application handles:
 
@@ -121,7 +121,7 @@ Helpful pop-up messages guide the user whenever an issue occurs.
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 Potential enhancements include:
 
@@ -134,7 +134,7 @@ Potential enhancements include:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome!
 
@@ -158,22 +158,3 @@ git push origin feature/new-feature
 ```
 
 5. Open a Pull Request
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.
-
----
-
-## 🌙 Acknowledgements
-
-* The Astrologer API for horoscope data
-* Python Tkinter for the GUI framework
-
----
-
-### ☽ Written in the stars ☾
-
-*Reveal your daily cosmic message with a click.*
